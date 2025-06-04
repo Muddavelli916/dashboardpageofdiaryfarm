@@ -410,4 +410,41 @@ img {
   object-fit: cover; /* or `contain` depending on how you want it displayed */
   border-radius: 8px; /* Optional: Add rounded corners for better UI */
 }
+@media screen {
+  (max-width: 768px) {
+    .sidebar {
+      width: 80px; /* Smaller sidebar on mobile */
+    }
+    
+    .sidebar.active {
+      width: 60px; /* Keep it small when active */
+    }
+    
+    .home-section {
+      width: calc(100% - 60px); /* Adjust home section width */
+      left: 60px; /* Adjust left position */
+    }
+    
+    .sidebar-button i {
+      font-size: 24px; /* Smaller icon size on mobile */
+    }
+    
+    .search-box {
+      width: 180px; /* Adjust search box width */
+    }
+    
+    .nav-icons {
+      gap: 20px; /* Reduce gap between icons */
+    }
+    
+    .profile-details {
+      min-width: 150px; /* Adjust profile details width */
+    }
+    
+    .logo-image {
+      max-width: 80px; /* Adjust logo size for mobile */
+    }
+  }
+  
+}
 
